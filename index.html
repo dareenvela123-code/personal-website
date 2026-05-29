@@ -1,96 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Computer Science Portfolio</title>
-  <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio | [Your Name]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/profile-icon.png">
 </head>
 <body>
 
-  <nav>
-    <h2>My Portfolio</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#coded">Code</a></li>
-      <li><a href="#physical">Physical</a></li>
-    </ul>
-  </nav>
-
-  <header id="about">
-    <h1>My Computer Science Journey</h1>
-    <p>Welcome! This website showcases the coding projects and physical artifacts I created in class this year.</p>
-  </header>
-
-  <main>
-    
-    <section id="coded">
-      <h2>Coded Projects</h2>
-      <div class="grid-container">
-
-        <div class="card">
-          <h3>Micro:bit Flappy Bird</h3>
-          <p>I coded the classic Flappy Bird game to run on a physical Micro:bit pocket computer.</p>
-          <a href="#" class="btn">View Code</a>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="navbar-logo">[Your Name]</a>
+            <ul class="navbar-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="card">
-          <h3>Flappy Bird (Group Project)</h3>
-          <p>I teamed up with a partner to build an upgraded version of Flappy Bird. This taught me teamwork and version control.</p>
-          <a href="#" class="btn">View Code</a>
+    <header id="hero" class="hero-section">
+        <div class="container hero-content">
+            <img src="images/placeholder-profile.png" alt="[Your Name] Profile Picture" class="profile-picture">
+            <h1 class="hero-title">Hello, I'm <span class="highlight">[Your Name]</span>.</h1>
+            <p class="hero-subtitle">Student Innovator | Java Developer | Maker</p>
+            <a href="#projects" class="btn btn-primary">View My Work</a>
         </div>
+    </header>
 
-        <div class="card">
-          <h3>Student List App</h3>
-          <p>A smart program built in class to track, organize, and manage lists of student names efficiently.</p>
-          <a href="#" class="btn">View Code</a>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a passionate student learning the fundamentals of computer science and physical engineering. I love taking abstract ideas and bringing them to life through code and physical hardware. This portfolio showcases my best projects from this past year, demonstrating my dedication to learning and creative problem-solving.</p>
+                </div>
+                <div class="about-skills">
+                    <h3>My Tech Stack</h3>
+                    <ul class="skill-tags">
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Micro:bit</li>
+                        <li>Drones</li>
+                        <li>Git / GitHub</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <div class="card">
-          <h3>QR Code Scanner App</h3>
-          <p>I developed a QR code tool that helps kids scan codes to quickly find their school assignments and work.</p>
-          <a href="#" class="btn">View Code</a>
-        </div>
-
-        <div class="card">
-          <h3>Java Random Generator Game</h3>
-          <p>A fun Java game using ArrayLists that randomly picks compliments, fortunes, or funny insults for the user.</p>
-          <a href="#" class="btn">View Code</a>
-        </div>
-
-        <div class="card">
-          <h3>Portfolio Website</h3>
-          <p>I built this entire portfolio website from scratch using HTML and CSS to display my yearly progress.</p>
-          <a href="#" class="btn">View Site Code</a>
-        </div>
-
-      </div>
     </section>
 
-    <section id="physical">
-      <h2>Physical Artifacts</h2>
-      <div class="grid-container">
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A curated list of my technical work from this class.</p>
+            <div class="projects-grid">
 
-        <div class="card">
-          <h3>Drone Testing & Flight School</h3>
-          <p>I tested drone hardware in class and ran a mini-flight school to teach younger kids how to safely pilot them.</p>
-          <img src="images/placeholder.png" alt="Drone Testing in Class">
+                <div class="project-card">
+                    <img src="images/placeholder-project.png" alt="Micro:bit Flappy Bird Screenshot" class="project-img">
+                    <div class="project-info">
+                        <h3>Micro:bit Flappy Bird</h3>
+                        <p>I coded a handheld, hardware-based version of the iconic Flappy Bird game using a physical Micro:bit pocket computer.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/placeholder-project.png" alt="Group Flappy Bird Screenshot" class="project-img">
+                    <div class="project-info">
+                        <h3>Flappy Bird (Group)</h3>
+                        <p>I collaborated with a partner to design and build an improved version of the game, learning essential teamwork and version control skills.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/placeholder-java.png" alt="Java Code Snippet" class="project-img">
+                    <div class="project-info">
+                        <h3>Java Text Generator</h3>
+                        <p>A fun Java-based game that uses ArrayLists to randomly generate complements, fortunes, or lighthearted insults for users.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/placeholder-project.png" alt="QR Code App Screenshot" class="project-img">
+                    <div class="project-info">
+                        <h3>QR Code Scanner</h3>
+                        <p>I developed a QR code tool that makes it easy for younger students to quickly find and access their class assignments and work.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/placeholder-drone.png" alt="Drone Testing in Action" class="project-img">
+                    <div class="project-info">
+                        <h3>Drone Testing</h3>
+                        <p>I tested and validated drone hardware in class, and ran a "flight school" to teach basic piloting skills to elementary students.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/placeholder-project.png" alt="Student List App Screenshot" class="project-img">
+                    <div class="project-info">
+                        <h3>Student List App</h3>
+                        <p>A simple yet effective application built to efficiently create, update, and manage organized lists of student information.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <div class="card">
-          <h3>Micro:bit Hardware Rig</h3>
-          <p>I set up and configured the actual physical Micro:bit circuits and buttons to make my handheld games playable.</p>
-          <img src="images/placeholder.png" alt="Physical Microbit Board">
-        </div>
-
-      </div>
     </section>
 
-  </main>
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Intro to Computer Science & Engineering</h3>
+                        <p class="institution">[Your School Name]</p>
+                        <p>Learned fundamental coding concepts in Java, HTML, CSS. Gained hands-on experience with Micro:bit development and drone testing.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
-  <footer>
-    <p>Made for my Final CS Portfolio Class Project.</p>
-  </footer>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a question or want to collaborate? Send me a message!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+            <p class="footer-credit">Inspired by <a href="https://derrickthrower.com/" target="_blank">Derrick Thrower</a></p>
+        </div>
+    </footer>
 
 </body>
 </html>
